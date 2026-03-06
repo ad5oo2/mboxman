@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE `virtual_users` MODIFY `domain_id` INTEGER NOT NULL DEFAULT 0,
+    MODIFY `name` VARCHAR(100) NOT NULL DEFAULT '',
+    MODIFY `password` VARCHAR(106) NOT NULL DEFAULT '';

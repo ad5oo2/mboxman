@@ -1,0 +1,2 @@
+*/10 * * * * root export $(xargs </usr/src/app/.env); /usr/bin/node /usr/src/app/src/crontasks.js exporter > /dev/null 2>&1
+10 05 * * * root export $(xargs </usr/src/app/.env); /usr/bin/node /usr/src/app/src/crontasks.js remover > /dev/null 2>&1

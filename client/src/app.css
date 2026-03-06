@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+
+body,
+window {
+  font-family: 'Anybody', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2.error {
+  color: chocolate;
+  margin: 20px;
+}
+h2.loading {
+  margin: 20px;
+}
+
+.app > .content-wrapper > .content-container > .header {
+  margin-bottom: 1.5rem;
+}
+.app > .content-wrapper > .content-container > .header > h1 {
+  margin: 0.5rem 0;
+}
+.app > .content-wrapper > .content-container > .header > span {
+  font-size: 0.9em;
+}
+
+.table {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+.table > .table-row {
+  border-bottom: 1px solid #eaeaea;
+}
+.table > .table-row.inactive > td {
+  background-color: rgb(209, 209, 209);
+  color: rgb(164, 171, 176);
+}
+.table > .table-row > td.warning {
+  background-color: rgb(255, 113, 113);
+  color: black;
+}
+.table > .table-row > td {
+  padding: 10px;
+}
+.table > .item:hover {
+  cursor: pointer;
+  background-color: rgba(162, 238, 238, 0.2);
+}
+.table > .header {
+  font-weight: bold;
+  background-color: rgba(8, 114, 114, 0.909);
+}
+.table > .header > td > span.sortable:hover {
+  cursor: pointer;
+}
+.table > .header > td > span {
+  color: white;
+}
+
+.form-container {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #eaeaea;
+}
+.form-field {
+  display: flex;
+  align-content: stretch;
+  margin-bottom: 10px;
+}
+.form-field > .label {
+  width: 30%;
+  min-width: 120px;
+  align-self: center;
+}
+.form-field > .input {
+  width: 40%;
+  flex-shrink: 0;
+  align-self: center;
+}
+input.search-field,
+.form-field > .input > input[type='text'],
+input[type='password'],
+select {
+  border: 1px solid rgba(8, 114, 114, 0.909);
+  border-radius: 5px;
+  height: 2em;
+  padding: 5px;
+  width: 100%;
+  background-color: white;
+}
+.form-field > .input > .hint {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+.form-field > .input > select {
+  padding: 5px;
+  height: 2.5em;
+}
+.form-field > .error {
+  align-self: center;
+  font-size: 0.8em;
+  color: chocolate;
+  margin-left: 20px;
+  width: 100%;
+}
+.form-field > .error > span {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-actions {
+  margin: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+}
+button {
+  margin-right: 20px;
+}
+button.submit {
+  background-color: rgba(8, 114, 114, 0.909);
+  color: white;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+button.link {
+  background-color: transparent;
+  border: 0;
+  color: rgba(8, 114, 114, 0.509);
+}
+button.danger {
+  background-color: chocolate;
+  color: white;
+  padding: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+button:disabled {
+  background-color: darkgrey;
+}
+button:hover:not([disabled]) {
+  cursor: pointer;
+}
+button.submit:hover:not([disabled]) {
+  background-color: rgba(8, 114, 114, 0.709);
+}
+button.link:hover:not([disabled]) {
+  color: rgba(8, 114, 114, 0.909);
+}
+button.danger:hover:not([disabled]) {
+  background-color: rgb(240, 104, 6);
+}
+span.link {
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: transparent;
+  border: 0;
+  color: rgba(8, 114, 114, 0.509);
+}
+span.link:hover {
+  color: rgba(8, 114, 114, 0.909);
+  cursor: pointer;
+}
+
+.pager {
+  margin: 10px;
+}
+.pager > button {
+  margin: 0 5px;
+}
+.pager > .hint {
+  font-size: 0.8em;
+}
+
+.icon-row {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-row > .icon {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  width: 1.5em;
+  height: 1.5em;
+}
+.icon-row > .icon.primary-color {
+  color: rgba(8, 114, 114, 0.509);
+}
+
+.icon-row > .text {
+  margin: 0 5px;
+}

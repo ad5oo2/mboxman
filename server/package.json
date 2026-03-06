@@ -1,0 +1,29 @@
+{
+  "name": "mboxman-backend",
+  "version": "1.0.0",
+  "description": "mboxman server application",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Denis Arbuzov",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.7.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "sequelize": "^6.24.0",
+    "sha512crypt-node": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "nodemon": "^2.0.20",
+    "prisma": "^4.6.0"
+  }
+}
