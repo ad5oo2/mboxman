@@ -1,6 +1,6 @@
 FROM node:25-alpine
 
-RUN apk update && apk add git
+RUN apk update && apk add git libc6-compat openssl
 
 VOLUME [ "/data" ]
 
