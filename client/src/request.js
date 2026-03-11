@@ -5,6 +5,11 @@ const request = async (url, data = {}) => {
   if (!data.headers) data.headers = {}
   data.credentials = 'include'
 
+  data.headers = {
+    ...data.headers,
+    api: 1
+  }
+
   const result = await fetch(url, data)
   lastCode.set(result.status)
   if (result.status == 401) {
