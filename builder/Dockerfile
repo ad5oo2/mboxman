@@ -7,6 +7,7 @@ VOLUME [ "/data" ]
 WORKDIR /root
 
 COPY build.sh .
+
 RUN chmod +x build.sh
 
 ENTRYPOINT [ "./build.sh" ]
