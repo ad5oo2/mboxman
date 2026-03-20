@@ -1,4 +1,4 @@
 #!/bin/sh
 
-docker build --platform="linux/amd64" -t mboxman-builder .
+docker build --platform="linux/amd64" -t mboxman-backend .
 

@@ -15,4 +15,6 @@ cp -R /root/src/server/* /data/backend
 cd /data/backend
 npm install
 npx prisma generate
+npx prisma migrate deploy
+chmod +x start.sh
 

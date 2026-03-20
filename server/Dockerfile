@@ -1,11 +1,11 @@
 FROM node:25-alpine
 
-RUN apk update && apk add openssl
+RUN apk update && apk add --no-cache openssl
 
-VOLUME [ "/data", "/exporter" ]
+VOLUME [ "/data", "/etc/crontabs/", "/exporter" ]
 
 WORKDIR /data/backend
 
 EXPOSE 3001
 
-ENTRYPOINT [ "/data/backend/start.sh" ]
+ENTRYPOINT [ "./start.sh" ]
